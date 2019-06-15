@@ -1,0 +1,26 @@
+@keyframes falling {
+    0% {
+      transform: translateY(-40%);
+      opacity: 0;
+    }
+  
+    50% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  
+    100% {
+      transform: translateY(40%);
+      opacity: 0;
+    }
+  }
+
+  @keyframes type_writing{
+    from { width: 0;
+      padding-left: 0;
+      padding-right:0; 
+          }
+    100% { width: 100%;
+      padding-right:5%; }
+  }
+  

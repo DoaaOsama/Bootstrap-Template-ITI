@@ -1,0 +1,14 @@
+.multi-carousel{
+  display: flex;
+  width: 100%;
+  flex-flow: row;
+  overflow: hidden;
+  flex-wrap: nowrap;
+
+  & .carousel-item{
+    display: inline;
+  }
+
+}
+
+

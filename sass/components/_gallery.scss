@@ -1,0 +1,11 @@
+.gallery{
+    &__image-container{
+        width: 100%;
+        padding: 0;
+        height:15rem;
+        overflow: hidden;
+    }
+    &_image{
+        object-fit:contain ;
+    }
+}

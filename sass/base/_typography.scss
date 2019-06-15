@@ -1,0 +1,9 @@
+a{
+    text-decoration: none;
+    color: inherit;
+}
+h2{
+    & span{
+        color: $primary-color
+    }
+}

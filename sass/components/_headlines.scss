@@ -1,0 +1,56 @@
+.headlines{
+
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    // margin-bottom: 0;
+    position: relative;
+    display: inline-block;
+    padding: 8px 18px;
+
+    &--light{
+        color:$white-primary;
+    }
+
+    &:before{
+        content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    border: 3px solid #14BBF8;
+    border-bottom: none;
+    border-right: none;
+    width: 40px;
+    height: 40px;
+    }
+
+
+    &:after{
+        content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    border: 3px solid #14BBF8;
+    border-top: none;
+    border-left: none;
+    width: 40px;
+    height: 40px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .headlines {
+        margin-top: 20px;
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .headlines {
+        margin-top: 25px;
+        font-size: 36px;
+    }
+}

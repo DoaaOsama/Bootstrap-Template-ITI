@@ -1,0 +1,113 @@
+//body variables
+$font-family-sans-serif: $default-sansSeif;
+$body-color:  #333333;
+$navbar-nav-link-padding-x: 0rem;
+
+//navbar
+$navbar-dark-active-color :$primary-color;
+$navbar-dark-color: $white-primary;
+$navbar-dark-toggler-border-color: $white-primary;
+
+.nav-link{
+    text-transform: capitalize;
+    padding: 20px 0;
+    margin-left: 25px;
+    letter-spacing: 0.5px;
+}
+
+@media only screen and (max-width:991px) {
+    .navbar-collapse {
+        background: #440A48;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        z-index: 3;
+    }
+}
+
+//caraousel
+$carousel-control-prev-icon-bg: none;
+$carousel-control-next-icon-bg: none;
+$carousel-control-opacity:.9;
+$carousel-control-icon-width: 70%;
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+//fonts
+h1, .h1, h2, .h2{
+    font-family: $default-cursive; 
+}  
+
+//navbar toggler
+.navbar-dark .navbar-toggler {
+    color: #f7f2f2;
+    border-color: #dddddd;
+    border-radius: 0;
+    background-color: rgba(255,255,255,0.5);
+  }
+
+  //caraousel
+  
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    position: relative;
+    height: 20%;
+    background-color: $primary-color ;
+    & > i{
+        position: absolute;
+        top: 25%;
+        left: 30%;
+        color: #ffffff;
+        font-size: 1.25rem;
+    }
+}
+.carousel-control-prev-icon{
+    left: -15%;
+}
+.carousel-control-next-icon{
+    right: -15%;
+}
+
+
+//card
+.card {
+    border: none;
+    padding: 20px;
+    background-color: transparent;
+    &-body > h2{
+        font-size: 45px;
+        font-weight: normal;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+    }
+    &-body > h4{
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
+
+
+//form-control
+.form-control {
+    background: rgba(255, 255, 255, 0.6);
+    color: #111111;
+    height: 45px;
+    margin-bottom: 30px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    &:focus{
+        background: rgba(255, 255, 255, 0.6); 
+    }
+    &:placeholder {
+        color: #111111;  
+    }
+}
+
+.p-none{
+    padding:0;
+}
